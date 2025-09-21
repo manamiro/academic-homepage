@@ -1,10 +1,10 @@
 body {
+  background-color: #2b2929;  /* dark background */
+  color: #e0e0e0;            /* light gray text */
   font-family: sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #0077cc;
+  color: #3377a8;
 }
 
 nav a:hover {
@@ -50,5 +50,40 @@ footer {
   border-radius: 50%;
   margin: 2em auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery {
+  display: flex;        /* so you can add more later side by side */
+  gap: 20px;            /* spacing between images */
+}
+
+figure {
+  display: inline-block;
+  text-align: center;   /* centers caption under the image */
+  margin: 0;
+}
+
+figure img {
+  width: 300px;         /* adjust size as you like */
+  height: auto;
+  display: block;       /* keeps image above caption */
+}
+
+/* Headings a bit brighter */
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+/* Gallery captions */
+figcaption {
+  color: #cccccc;
+}
+
+/* Links */
+a {
+  color: #66b2ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #99ccff;
 }
 
